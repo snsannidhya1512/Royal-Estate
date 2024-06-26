@@ -292,7 +292,7 @@ export default function CreateListing() {
               />
               <div className="flex flex-col items-center">
                 <p>Regular Price</p>
-                <span className="text-xs">($/months)</span>
+                <span className="text-xs">(₹/months)</span>
               </div>
             </div>
             {formData.offer && (
@@ -309,7 +309,7 @@ export default function CreateListing() {
                 />
                 <div className="flex flex-col items-center">
                   <p>Discounted Price</p>
-                  <span className="text-xs">($/months)</span>
+                  <span className="text-xs">(₹/months)</span>
                 </div>
               </div>
             )}
