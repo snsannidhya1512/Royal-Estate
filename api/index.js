@@ -72,6 +72,13 @@ const __dirname = path.resolve();
 const app = express();
 app.use(express.json()); // Parse incoming JSON requests
 app.use(cookieParser());
+app.use(
+  cors({
+    origin: ["https://deploy-mern-1whq.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 
 // Routes
 app.use("/api/user", userRouter);
